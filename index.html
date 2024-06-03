@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>當機等候網頁</title>
+
+    <link rel="icon" href="IMG/shoppe.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="feedback.js"></script>
+
+
+</head>
+
+<body>
+
+<header>
+    <a href="https://shopee.tw/">
+        <img src="IMG/蝦皮LOGO.png" alt="蝦皮LOGO" height="89" width="253"/>
+    </a>
+</header>
+<div class="center">
+    <img src="IMG/蝦皮.png" alt="蝦皮">
+</div>
+<main>
+    <section>
+        <h2 class="animated-text">Please wait...</h2>
+        <div class="loader"></div>
+
+    </section>
+
+    <div class="button-container">
+        <button onclick="goFanPage()" class="fan-page-button">到蝦皮粉絲專頁</button>
+        <button onclick="goHome()" class="home-button">回到官網首頁</button>
+        <button onclick="goHelpCenter()" class="help-center-button">到蝦皮幫助中心</button>
+    </div>
+    <section class="feedback-section">
+        <h3>使用者回報</h3>
+        <form id="feedback-form">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+            <label for="issue">回報的問題：</label>
+            <textarea id="issue" name="issue" rows="4" required></textarea>
+            <button id="submit-button" type="submit" class="submit-button" onclick="displayMessage()">提交回報</button>
+
+        </form>
+
+
+
+    </section>
+
+</main>
+
+</body>
+
+</html>
